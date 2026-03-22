@@ -168,10 +168,10 @@ def main() -> None:
         default="simulation",
         help=f"Driver name (available: {', '.join(list_drivers())})",
     )
-    parser.add_argument(
+    parser.add_argument(1
         "--workspace",
-        default=str(Path.home() / ".nanobot" / "workspace"),
-        help="Workspace directory (default: ~/.nanobot/workspace)",
+        default=str(Path.home() / ".OEA" / "workspace"),
+        help="Workspace directory (default: ~/.OEA/workspace)",
     )
     parser.add_argument("--gui", action="store_true", help="Open 3-D viewer")
     parser.add_argument(
